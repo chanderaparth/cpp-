@@ -1,0 +1,46 @@
+#include<iostream>
+
+class REPORT
+{
+	int adno;
+	char name[20];
+	float marks[5];
+	float average;
+	void GETAVG()
+	{
+		average = (marks[0]+marks[1]+marks[2]+marks[3]+marks[4])/5;
+	}
+public:
+	void READINFO();
+	void DISPLAYINFO();
+};
+void REPORT::READINFO()
+{
+	do
+	{
+		std::cout<<"Enter 4 digit admission number ";
+		std::cin>>adno;
+	}while(adno<999 || adno>10000);
+	std::cout<<"Enter name";
+	gets(name);
+	std::cout<<"Enter marks in ";
+	for(int i=0;i<5;i++)
+	{
+		std::cout<<"Subject "<<i+1<<":";
+		std::cin>>marks[i];
+	};
+	GETAVG();
+}
+void REPORT::DISPLAYINFO()
+{
+	std::cout<<"Admission number:"<<adno<<" Name:"<<name<<" Marks are:"<< marks[0]<<" "<< marks[1]
+	<<" "<<marks[2]<<" "<< marks[3]<<" "<< marks[4]<<" Average:"<<average;
+}
+int main()
+{
+	REPORT obj;
+	obj.READINFO();
+	obj.DISPLAYINFO();
+	
+	return 0;
+}
