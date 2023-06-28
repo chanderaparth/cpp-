@@ -1,5 +1,5 @@
 #include<iostream>
-#include<conio.h>
+
 class flight
 {
 private:
@@ -49,5 +49,5 @@ int main()
    flight f;
    f.feedinfoo();
    f.showinfoo();
-getch();
+return 0;
 }
