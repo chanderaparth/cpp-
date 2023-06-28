@@ -7,7 +7,7 @@ class student
   private:
   int admno;
   float e,m,s,total,per;
-  char sname[20];
+  char sname[5];
    float ctotal()
     {
      return e+m+s;

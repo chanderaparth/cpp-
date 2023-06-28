@@ -4,7 +4,7 @@ using namespace std;
 class batsman
 {
 	int bcode;
-	char bname[20];
+	char bname[5];
 	int innings,notout,runs;
 	int batavg;
 	void calcavg()

@@ -5,7 +5,7 @@ class book
 {
    private:
              int bno;
-            char btytle[20];
+            char btytle[5];
             float price;
            float total_cost(int x)
             {

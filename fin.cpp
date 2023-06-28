@@ -5,7 +5,7 @@ class flight
 {
 private:
          int fno;
-        char dest[10];
+        char dest[5];
         float dist;
         float fuel;
       float calfuel(float k)

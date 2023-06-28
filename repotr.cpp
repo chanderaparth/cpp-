@@ -4,7 +4,7 @@ using namespace std;
 class REPORT
 {
 	int adno;
-	char name[20];
+	char name[5];
 	float marks[5];
 	float average;
 	void GETAVG()
