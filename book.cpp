@@ -1,6 +1,6 @@
 #include<iostream>
 
-
+using namespace std;
 class book
 {
    private:
@@ -16,19 +16,19 @@ class book
 public:
           void input()
                {
-                           std::cout<<"Enter book no\tbook tytle\tprice of the book";
-                           std::cin>>bno;
-                          std::cin>>btytle;
-                           std::cin>>price;
+                           cout<<"Enter book no\tbook tytle\tprice of the book";
+                           cin>>bno;
+                           cin>>btytle;
+                           cin>>price;
             }
           void purchase()
           {
-            std::cout<<"Enter the number of copies to be purchased";
+            cout<<"Enter the number of copies to be purchased";
              int n;
-            std::cin>>n;
+            cin>>n;
             float total;
            total=total_cost(n);
-            std::cout<<"Total cost to be paid by the user:"<<total<<"/- rupees";
+            cout<<"Total cost to be paid by the user:"<<total<<"/- rupees";
          }
 };
 int main()

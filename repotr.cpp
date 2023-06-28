@@ -1,5 +1,6 @@
 #include<iostream>
 
+using namespace std;
 class REPORT
 {
 	int adno;
@@ -18,22 +19,22 @@ void REPORT::READINFO()
 {
 	do
 	{
-		std::cout<<"Enter 4 digit admission number ";
-		std::cin>>adno;
+		cout<<"Enter 4 digit admission number ";
+		cin>>adno;
 	}while(adno<999 || adno>10000);
-	std::cout<<"Enter name";
+	cout<<"Enter name";
 	gets(name);
-	std::cout<<"Enter marks in ";
+	cout<<"Enter marks in ";
 	for(int i=0;i<5;i++)
 	{
-		std::cout<<"Subject "<<i+1<<":";
-		std::cin>>marks[i];
+		cout<<"Subject "<<i+1<<":";
+		cin>>marks[i];
 	};
 	GETAVG();
 }
 void REPORT::DISPLAYINFO()
 {
-	std::cout<<"Admission number:"<<adno<<" Name:"<<name<<" Marks are:"<< marks[0]<<" "<< marks[1]
+	cout<<"Admission number:"<<adno<<" Name:"<<name<<" Marks are:"<< marks[0]<<" "<< marks[1]
 	<<" "<<marks[2]<<" "<< marks[3]<<" "<< marks[4]<<" Average:"<<average;
 }
 int main()

@@ -1,5 +1,6 @@
 #include <iostream>
 
+using namespace std;
 class test
 {
   private:
@@ -15,20 +16,20 @@ class test
   public:
   void schedule()
   {
-    std::cout<<"Enter the test code:";
-    std::cin>>testcode;
-   std::cout<<"Enter the description:";
-    std::cin>>description;
-   std::cout<< "Enter the no of candidates greater than 101";
-    std::cin>>nocad;
+    cout<<"Enter the test code:";
+    cin>>testcode;
+   cout<<"Enter the description:";
+    cin>>description;
+   cout<< "Enter the no of candidates greater than 101";
+    cin>>nocad;
     calcntr();
   }
   void disptest()
   {
-    std::cout<<"Test code="<<testcode;
-    std::cout<<"Description:"<<description;
-    std::cout<<"Number of candidates:"<<nocad;
-    std::cout<<"Centers required:"<<cenreq;
+    cout<<"Test code="<<testcode;
+    cout<<"Description:"<<description;
+    cout<<"Number of candidates:"<<nocad;
+    cout<<"Centers required:"<<cenreq;
   }
   };
   int main()

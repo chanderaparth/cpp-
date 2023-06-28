@@ -1,6 +1,6 @@
 #include<iostream>
 
-
+using namespace std;
 class batsman
 {
 	int bcode;
@@ -17,17 +17,17 @@ public :
 };
 void batsman::readdata()
 {
-	std::cout<<"Enter batsman code ";
-	std::cin>> bcode;
-	std::cout<<"Enter batsman name ";
+	cout<<"Enter batsman code ";
+	cin>> bcode;
+	cout<<"Enter batsman name ";
 	gets(bname);
-	std::cout<<"enter innings,notout and runs ";
-	std::cin>>innings>>notout>>runs;
+	cout<<"enter innings,notout and runs ";
+	cin>>innings>>notout>>runs;
 	calcavg();
 }
 void batsman::displaydata()
 {
-	std::cout<<"Batsman code "<<bcode<<"\nBatsman name "<<bname<<"\nInnings "<<innings
+	cout<<"Batsman code "<<bcode<<"\nBatsman name "<<bname<<"\nInnings "<<innings
 	<<"\nNot out "<<notout<<"\nRuns "<<runs<<"\nBatting Average "<<batavg;
 }
 int main()

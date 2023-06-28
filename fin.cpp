@@ -1,5 +1,6 @@
 #include<iostream>
 
+using namespace std;
 class flight
 {
 private:
@@ -24,23 +25,23 @@ private:
 public:
       void feedinfoo()
       { 
-           std::cout<<"Enter the flight no:";
-           std::cin>>fno;
-           std::cout<<"Enter*destination:";
-           std::cin>>dest;
-           std::cout<<"*distance:";
-           std::cin>>dist;
+           cout<<"Enter the flight no:";
+           cin>>fno;
+           cout<<"Enter*destination:";
+           cin>>dest;
+           cout<<"*distance:";
+           cin>>dist;
           float total;
            total=calfuel(dist);
       }
     void showinfoo()
      { 
          float total;
-       std::cout<<"t********INFORMATION*********";
-      std::cout<<"*Flight number:"<<fno;
-      std::cout<<"*Destination:"<<dest;
-      std::cout<<"*Distance:"<<dist<<"k.m";
-      std::cout<<"*Total fuel required:"<<total<<"litr";
+      cout<<"t********INFORMATION*********";
+      cout<<"*Flight number:"<<fno;
+      cout<<"*Destination:"<<dest;
+      cout<<"*Distance:"<<dist<<"k.m";
+      cout<<"*Total fuel required:"<<total<<"litr";
      }
 };
 int main()
