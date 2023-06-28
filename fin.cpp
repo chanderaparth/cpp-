@@ -37,11 +37,11 @@ public:
     void showinfoo()
      { 
          float total;
-      cout<<"t********INFORMATION*********";
-      cout<<"*Flight number:"<<fno;
-      cout<<"*Destination:"<<dest;
-      cout<<"*Distance:"<<dist<<"k.m";
-      cout<<"*Total fuel required:"<<total<<"litr";
+      cout<<"INFORMATION";
+      cout<<"Flight number:"<<fno;
+      cout<<"Destination:"<<dest;
+      cout<<"Distance:"<<dist<<"k.m";
+      cout<<"Total fuel required:"<<total<<"litr";
      }
 };
 int main()
