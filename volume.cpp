@@ -8,7 +8,6 @@ class Shape {
   float volume;
 };
 
-
 class Sphere : public Shape {
  
  protected:
@@ -21,16 +20,13 @@ class Sphere : public Shape {
     cin >> radius;
   }
 
-
   double Volume() {
 
     volume = (4 * 22 * radius * radius * radius) / (3 * 7);
 
-  
     return volume;
   }
 };
-
 
 class Cylinder : public Shape {
  
@@ -52,7 +48,6 @@ class Cylinder : public Shape {
   double Volume() {
 
     volume = (22 * radius * radius * height) / 7;
-
 
     return volume;
   }
