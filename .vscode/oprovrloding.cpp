@@ -34,7 +34,7 @@ int main()
     cout << "\n\nYour number before use of unary minus operator\n";
     c.display();
 
-    //Use of unary minus operator function
+    
     -c;
 
     cout << "\n\nYour number after use of unary minus operator\n";
