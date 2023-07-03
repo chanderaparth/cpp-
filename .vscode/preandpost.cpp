@@ -18,18 +18,15 @@ public:
     {
         cout << "A: " << a << endl;
     }
-
-	// For pre increment
     void operator++()
     {
         a++;
     }
 
-	// For post increment
-    int operator++(int)
+	    int operator++(int)
     {
-        Test co(*this);  // co (this) = 11;  co.a=11;
-        a++;  //t  a=11;  a=a+1;  a=11+1 a=12
+        Test co(*this);  
+        a++;
         return a;
     }
 
