@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Employee
@@ -33,16 +33,20 @@ int main()
     int i;
     Employee manager[m], worker[w];
 
+    // Data input of Manager.
     for(i=0; i<m; i++)
     {
         cout<<"\nDetails of manager: "<<i + 1<<endl;
         manager[i].getData();
     }
+
+    // Data input of Worker.
     for(i=0; i<w; i++)
     {
         cout<<"\nDetails of worker: " << i + 1 << endl;
         worker[i].getData();
     }
+
     cout<<"\nOutput\n";
     cout << "\nDetails of Manager: " << endl;
     for(i=0; i < m; i++)
@@ -50,6 +54,7 @@ int main()
         cout << i + 1 << "\t";
         manager[i].putData();
     }
+
     cout << "\n\nDetails of Worker:" << endl;
     for(i=0; i < w; i++)
     {
