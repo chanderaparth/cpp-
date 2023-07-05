@@ -17,9 +17,9 @@ class Box
     Box operator++(int)
 {
 Box t;
-t.l = l++;
-t.w = w++;
-t.h = h++;
+t.l = l;
+t.w = w;
+t.h = h;
 return t;
 }
 };
