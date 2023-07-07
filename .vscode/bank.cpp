@@ -131,9 +131,6 @@ int main()
                 s1.s_display();
                 break;
             case 4 :
-                s1.s_display();
-                break;
-            case 5 :
                 goto end;
             default:
                 cout<<"\n\nEntered choice is invalid,\"TRY AGAIN\"";
@@ -164,9 +161,6 @@ int main()
                 c1.c_display();
                 break;
             case 4 :
-                c1.c_display();
-                break;
-            case 5 :
                 goto end;
             default:
                 cout<<"\n\nEntered choice is invalid,\"TRY AGAIN\"";
