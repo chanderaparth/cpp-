@@ -58,7 +58,6 @@ public:
  
     }
  
- 
 };
  
 class saving_account : public account
@@ -96,7 +95,6 @@ public:
         }
     }
 };
- 
  
  
 int main()
