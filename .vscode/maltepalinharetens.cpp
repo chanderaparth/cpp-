@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 using namespace std;
 
 class M {
@@ -16,7 +15,14 @@ class N {
     void getN(void);
 };
 
-class P : public M, public N {
+class O {
+  protected:
+    int o;
+  public:
+    void getO(void);
+};
+
+class P : public M, public N, public O {
   public:
     void display(void);
 };
@@ -30,11 +36,16 @@ void N :: getN() {
   cout << "Enter value of N: ";
   cin >> n;
 }
+void O :: getO() {
+  cout << "Enter value of o: ";
+  cin >> o;
+}
 
 void P::display (void) {
   cout << "m = " << m << endl;
   cout << "n = " << n << endl;
-  cout << "m * n = " << m * n<< endl;
+  cout << "o = " << o << endl;
+  cout << "m * n * o = " << m * n * o<< endl;
 }
 
 int main() {
@@ -42,9 +53,11 @@ int main() {
 
   p.getM();
   p.getN();
+  p.getO();
 
   system("cls");
   p.display();
 
   return 0;
 }
+
