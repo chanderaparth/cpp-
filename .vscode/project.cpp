@@ -4,7 +4,8 @@ using namespace std;
 
 int main() {
     string menu[10] = {"chinese Roal", "Veggies", "Salt & pepper", "Manchuream", "dary manchurean", "sushi", "hakka nuddle", "pasta", "white sous pasta", "Magi"};
-    float price[10] = {500, 300, 700, 600, 200, 200, 100, 800, 600, 900};
+    float price[10] = {₹500, ₹300, ₹700, ₹600, ₹200, ₹200, ₹100, ₹800, ₹600, ₹900};
+
     int quantity[10] = {0, 0, 0, 0, 0};
     float gst = 0.06;
     float discount = 0.10;
